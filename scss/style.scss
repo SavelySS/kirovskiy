@@ -8,6 +8,8 @@ $hover-red: #891313;
 $subtitle-color: rgb(108, 108, 108, 70%);
 $f-color: #2D2D2D;
 $footer-color: rgb(255, 255, 255, 70%);
+$white70: rgb(255, 255, 255, 70%);
+$gray: #A7A7A7;
 
 @font-face {
 	font-family: 'Intro Friday'; 
@@ -48,6 +50,7 @@ $footer-color: rgb(255, 255, 255, 70%);
     font-size: 16px;
     font-weight: $medium;
     font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
 }
 
 .h5 {
@@ -154,6 +157,10 @@ main {
 }
 
 // --------------- first-block ----------------
+
+.first-block-container {
+    margin-bottom: 120px;
+}
 
 .first-block {
 
@@ -313,6 +320,476 @@ main {
 }
 
 
+// --------------- sales ----------------
+
+.sale {
+    margin-bottom: 120px;
+
+    &__header {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        margin-right: 30px;
+        margin-bottom: 3px;
+        
+        &__text {
+            font-family: 'Intro Friday', sans-serif;
+            font-size: 50px;
+            line-height: 110%;
+            color: $f-color;
+            margin-right: 30px;
+        }
+    }
+
+    &__btn {
+        width: 199px;
+        height: 51px;
+        border-radius: 10px;
+        background: $main-red;
+        color: white;
+
+        &:hover {
+            background: $hover-red;
+        }
+    }
+
+    &__arrows-left {
+        transform: rotate(180deg);
+    }
+}
+
+.sale-swiper-card {
+    height: 400px;
+    width: 283px;
+    border-radius: 20px;
+
+    &__text-box {
+        margin: 0 16px 58px 16px;
+    }
+
+    &__title {
+        font-weight: $bold;
+        font-size: 18px;
+        line-height: 120%;
+        margin-bottom: 8px;
+        color: $f-color;
+
+    }
+
+    &__articul {
+        color: $gray;
+        font-weight: $medium;
+        font-size: 12px;
+        line-height: 120%;
+    }
+
+    &__img-box {
+        margin: 16px;
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        // padding-top: 100%;
+        border-radius: 10px;
+        height: 140px;
+        background-color: white;
+
+        .img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            object-fit: contain; /* или contain */
+        }
+    }
+
+    &__price {
+        margin: 0 16px 20px 16px;
+    }
+
+    &__new-price {
+        color: $main-red;
+        font-weight: $bold;
+        font-size: 20px;
+        line-height: 140%;
+        margin-right: 12px;
+    }
+
+    &__old-price {
+        color: $gray;
+        font-weight: $bold;
+        font-size: 16px;
+        line-height: 140%;
+        text-decoration: line-through;
+
+    }
+
+    &__btn-group {
+        margin: 0 16px 16px 16px;
+    }
+
+    .like {
+        width: 25px;
+        height: 25px;
+        background: url('/assets/img/like-r.svg') no-repeat center center / contain;
+    }
+
+    .cart {
+        width: 210px;
+        height: 40px;
+        background-color: $main-red;
+        color: white;
+        border-radius: 10px;
+        margin-right: 16px;
+    }
+
+    
+    &:hover {
+        cursor: pointer;
+        background-color: $main-red;
+
+        .sale-swiper-card__title, .sale-swiper-card__new-price {
+            color: white;
+        }
+
+        .sale-swiper-card__old-price {
+            color: white;
+            opacity: 0.6;
+        }
+
+        .like {
+            background: url('/assets/img/like-w.svg') no-repeat center center / contain;
+        }
+
+        .cart {
+            background-color: white;
+            color: $main-red;
+        }
+    }
+}
+
+// ---------------   lk   ----------------
+
+.lk {
+    margin-bottom: 120px;
+    background: url('/assets/img/lk-bg-img.svg') no-repeat center center / cover;
+    height: 600px;
+    background-color: $main-red;
+    border-radius: 30px;
+
+    &__text-box {
+        width: 620px;
+        text-align: center;
+    } 
+
+    &__title {
+        color: white;  
+        font-family: 'Intro Friday', sans-serif;
+        font-size: 50px;
+        line-height: 110%;
+        margin-bottom: 20px;  
+    }
+
+    &__subtitle {
+        color: $white70;
+        margin-bottom: 48px;
+    }
+
+    .btn-w-arrow {
+        position: relative;
+        width: 279px;
+        height: 51px;
+        background-color: white;
+        border-radius: 10px;
+        color: $main-red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        // &:hover {
+        //     background-color: $hover-red;
+        // }
+    
+        &__arrow {
+            position: absolute;
+            right: -16px;
+        }
+    }
+}
+
+// -------------- vacancy ----------------
+
+.vac {
+    margin-bottom: 120px;
+    background: url('/assets/img/vac-bg-img.svg') no-repeat center center / cover;
+    height: 600px;
+    border-radius: 30px;
+
+    &__text-box {
+        width: 455px;
+        text-align: center;
+        color: white;  
+    } 
+
+    &__title {
+        font-family: 'Intro Friday', sans-serif;
+        font-size: 50px;
+        line-height: 110%;
+        margin-bottom: 20px;  
+    }
+
+    &__subtitle {
+        margin-bottom: 48px;
+    }
+
+    .btn-w-arrow {
+        position: relative;
+        width: 231px;
+        height: 51px;
+        background-color: $main-red;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        &:hover {
+            background-color: $hover-red;
+        }
+    
+        &__arrow {
+            position: absolute;
+            right: -16px;
+        }
+    }
+}
+
+// ---------------  news  ----------------
+
+.news {
+    margin-bottom: 120px;
+
+    &__header {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        font-family: 'Intro Friday', sans-serif;
+        font-size: 50px;
+        line-height: 110%;
+        color: $f-color;
+        margin-right: 30px;
+    }
+
+    &__cards {
+        column-gap: 20px;
+    }
+
+}
+
+.news-card {
+    height: 548px;
+    background-color: white;
+    border-radius: 30px;
+
+    &__container {
+        margin: 40px;
+        height: calc(100% - 80px);
+
+    }
+
+    &__header {
+        margin-bottom: 24px;
+    }
+
+    &__category {
+        width: auto;
+        height: auto;
+        border-radius: 24px;
+        background-color: $main-red;
+        color: white;
+        margin-right: 8px;
+    }
+
+    &__category-text {
+        margin: 8px 24px;
+        font-size: 14px;
+        font-weight: $medium;
+        line-height: 130%;
+    }
+
+    &__time {
+        gap: 8px;
+    }
+
+    &__time-img {
+        background: url(/assets/img/time-r.svg);
+        width: 20px;
+        height: 20px;
+        margin-left: 24px;
+    }
+
+    &__time-text {
+        color: $main-red;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: $bold;
+        line-height: 130%;
+        color: $f-color;
+        margin-bottom: 12px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        font-weight: $regular;
+        line-height: 130%;
+        color: $subtitle-color;
+        margin-bottom: 40px;
+        height: 36px;
+        overflow: hidden;
+    }
+
+    &__img-box {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        // padding-top: 100%;
+        border-radius: 30px;
+        height: 260px;
+        background-color: white;
+
+        img {
+            position: absolute;
+            width: 100%;
+            // top: -50%;
+            height: auto;
+            object-fit: cover; /* или contain */
+        }
+    }
+
+    &:hover {
+        background-color: $main-red;
+        
+        .news-card__time-img {
+            background: url(/assets/img/time.svg);
+        }
+
+        .news-card__category {
+            background-color: white;
+            color: $main-red;
+        }
+
+        .news-card__time-text, .news-card__title {
+            color: white;
+        }
+
+        .news-card__subtitle {
+            color: $white70;
+        }
+    }
+
+}
+
+// --------------- brands ----------------
+
+.brands {
+    margin-bottom: 120px;
+
+    &__header {
+        margin-bottom: 48px;
+    }
+
+    &__title {
+        margin-bottom: 3px;
+        
+        &__text {
+            font-family: 'Intro Friday', sans-serif;
+            font-size: 50px;
+            line-height: 110%;
+            color: $f-color;
+            margin-right: 30px;
+        }
+    }
+
+    &__arrows-left {
+        transform: rotate(180deg);
+    }
+}
+
+.swiper-brands {
+
+    &__card {
+        height: 180px;
+        width: 339px;
+        background-color: #F8F8F8;
+        // background-color: black;
+    }
+
+    &__img {
+        
+        width: 90%;
+        height: 100%;
+        background: url(/assets/img/brand.svg);
+        filter: grayscale(1);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:hover {
+            filter: none;
+        }
+    }
+}
+
+// --------------- rent ----------------
+
+.rent {
+    margin-bottom: 120px;
+    background: url('/assets/img/rent.svg') no-repeat center center / cover;
+    height: 600px;
+    border-radius: 30px;
+
+    &__text-box {
+        width: 620px;
+        text-align: center;
+        color: white;  
+    } 
+
+    &__title {
+        font-family: 'Intro Friday', sans-serif;
+        font-size: 50px;
+        line-height: 110%;
+        margin-bottom: 20px;  
+    }
+
+    &__subtitle {
+        margin-bottom: 48px;
+    }
+
+    .btn-w-arrow {
+        position: relative;
+        width: 231px;
+        height: 51px;
+        background-color: $main-red;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        &:hover {
+            background-color: $hover-red;
+        }
+    
+        &__arrow {
+            position: absolute;
+            right: -16px;
+        }
+    }
+}
 
 // --------------- footer ----------------
 
@@ -359,6 +836,8 @@ main {
         }
     }
 }
+
+
 
 .messengers {
     width: 48px;

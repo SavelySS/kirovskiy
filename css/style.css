@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Intro Friday";
   src: url(/assets/fonts/IntroFriday.ttf);
@@ -36,6 +37,7 @@
   font-size: 16px;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
 }
 
 .h5 {
@@ -124,6 +126,10 @@ header {
 main {
   min-height: 100vh;
   height: auto;
+}
+
+.first-block-container {
+  margin-bottom: 120px;
 }
 
 .first-block__text-box {
@@ -258,6 +264,383 @@ main {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.sale {
+  margin-bottom: 120px;
+}
+.sale__header {
+  margin-bottom: 40px;
+}
+.sale__title {
+  margin-right: 30px;
+  margin-bottom: 3px;
+}
+.sale__title__text {
+  font-family: "Intro Friday", sans-serif;
+  font-size: 50px;
+  line-height: 110%;
+  color: #2D2D2D;
+  margin-right: 30px;
+}
+.sale__btn {
+  width: 199px;
+  height: 51px;
+  border-radius: 10px;
+  background: #D11E1F;
+  color: white;
+}
+.sale__btn:hover {
+  background: #891313;
+}
+.sale__arrows-left {
+  transform: rotate(180deg);
+}
+
+.sale-swiper-card {
+  height: 400px;
+  width: 283px;
+  border-radius: 20px;
+}
+.sale-swiper-card__text-box {
+  margin: 0 16px 58px 16px;
+}
+.sale-swiper-card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 8px;
+  color: #2D2D2D;
+}
+.sale-swiper-card__articul {
+  color: #A7A7A7;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+}
+.sale-swiper-card__img-box {
+  margin: 16px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 140px;
+  background-color: white;
+}
+.sale-swiper-card__img-box .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* или contain */
+}
+.sale-swiper-card__price {
+  margin: 0 16px 20px 16px;
+}
+.sale-swiper-card__new-price {
+  color: #D11E1F;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  margin-right: 12px;
+}
+.sale-swiper-card__old-price {
+  color: #A7A7A7;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  text-decoration: line-through;
+}
+.sale-swiper-card__btn-group {
+  margin: 0 16px 16px 16px;
+}
+.sale-swiper-card .like {
+  width: 25px;
+  height: 25px;
+  background: url("/assets/img/like-r.svg") no-repeat center center/contain;
+}
+.sale-swiper-card .cart {
+  width: 210px;
+  height: 40px;
+  background-color: #D11E1F;
+  color: white;
+  border-radius: 10px;
+  margin-right: 16px;
+}
+.sale-swiper-card:hover {
+  cursor: pointer;
+  background-color: #D11E1F;
+}
+.sale-swiper-card:hover .sale-swiper-card__title, .sale-swiper-card:hover .sale-swiper-card__new-price {
+  color: white;
+}
+.sale-swiper-card:hover .sale-swiper-card__old-price {
+  color: white;
+  opacity: 0.6;
+}
+.sale-swiper-card:hover .like {
+  background: url("/assets/img/like-w.svg") no-repeat center center/contain;
+}
+.sale-swiper-card:hover .cart {
+  background-color: white;
+  color: #D11E1F;
+}
+
+.lk {
+  margin-bottom: 120px;
+  background: url("/assets/img/lk-bg-img.svg") no-repeat center center/cover;
+  height: 600px;
+  background-color: #D11E1F;
+  border-radius: 30px;
+}
+.lk__text-box {
+  width: 620px;
+  text-align: center;
+}
+.lk__title {
+  color: white;
+  font-family: "Intro Friday", sans-serif;
+  font-size: 50px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+.lk__subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 48px;
+}
+.lk .btn-w-arrow {
+  position: relative;
+  width: 279px;
+  height: 51px;
+  background-color: white;
+  border-radius: 10px;
+  color: #D11E1F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lk .btn-w-arrow__arrow {
+  position: absolute;
+  right: -16px;
+}
+
+.vac {
+  margin-bottom: 120px;
+  background: url("/assets/img/vac-bg-img.svg") no-repeat center center/cover;
+  height: 600px;
+  border-radius: 30px;
+}
+.vac__text-box {
+  width: 455px;
+  text-align: center;
+  color: white;
+}
+.vac__title {
+  font-family: "Intro Friday", sans-serif;
+  font-size: 50px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+.vac__subtitle {
+  margin-bottom: 48px;
+}
+.vac .btn-w-arrow {
+  position: relative;
+  width: 231px;
+  height: 51px;
+  background-color: #D11E1F;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vac .btn-w-arrow:hover {
+  background-color: #891313;
+}
+.vac .btn-w-arrow__arrow {
+  position: absolute;
+  right: -16px;
+}
+
+.news {
+  margin-bottom: 120px;
+}
+.news__header {
+  margin-bottom: 40px;
+}
+.news__title {
+  font-family: "Intro Friday", sans-serif;
+  font-size: 50px;
+  line-height: 110%;
+  color: #2D2D2D;
+  margin-right: 30px;
+}
+.news__cards {
+  column-gap: 20px;
+}
+
+.news-card {
+  height: 548px;
+  background-color: white;
+  border-radius: 30px;
+}
+.news-card__container {
+  margin: 40px;
+  height: calc(100% - 80px);
+}
+.news-card__header {
+  margin-bottom: 24px;
+}
+.news-card__category {
+  width: auto;
+  height: auto;
+  border-radius: 24px;
+  background-color: #D11E1F;
+  color: white;
+  margin-right: 8px;
+}
+.news-card__category-text {
+  margin: 8px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+}
+.news-card__time {
+  gap: 8px;
+}
+.news-card__time-img {
+  background: url(/assets/img/time-r.svg);
+  width: 20px;
+  height: 20px;
+  margin-left: 24px;
+}
+.news-card__time-text {
+  color: #D11E1F;
+}
+.news-card__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  color: #2D2D2D;
+  margin-bottom: 12px;
+}
+.news-card__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  color: rgba(108, 108, 108, 0.7);
+  margin-bottom: 40px;
+  height: 36px;
+  overflow: hidden;
+}
+.news-card__img-box {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+  height: 260px;
+  background-color: white;
+}
+.news-card__img-box img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* или contain */
+}
+.news-card:hover {
+  background-color: #D11E1F;
+}
+.news-card:hover .news-card__time-img {
+  background: url(/assets/img/time.svg);
+}
+.news-card:hover .news-card__category {
+  background-color: white;
+  color: #D11E1F;
+}
+.news-card:hover .news-card__time-text, .news-card:hover .news-card__title {
+  color: white;
+}
+.news-card:hover .news-card__subtitle {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.brands {
+  margin-bottom: 120px;
+}
+.brands__header {
+  margin-bottom: 48px;
+}
+.brands__title {
+  margin-bottom: 3px;
+}
+.brands__title__text {
+  font-family: "Intro Friday", sans-serif;
+  font-size: 50px;
+  line-height: 110%;
+  color: #2D2D2D;
+  margin-right: 30px;
+}
+.brands__arrows-left {
+  transform: rotate(180deg);
+}
+
+.swiper-brands__card {
+  height: 180px;
+  width: 339px;
+  background-color: #F8F8F8;
+}
+.swiper-brands__img {
+  width: 90%;
+  height: 100%;
+  background: url(/assets/img/brand.svg);
+  filter: grayscale(1);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-brands__img:hover {
+  filter: none;
+}
+
+.rent {
+  margin-bottom: 120px;
+  background: url("/assets/img/rent.svg") no-repeat center center/cover;
+  height: 600px;
+  border-radius: 30px;
+}
+.rent__text-box {
+  width: 620px;
+  text-align: center;
+  color: white;
+}
+.rent__title {
+  font-family: "Intro Friday", sans-serif;
+  font-size: 50px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+.rent__subtitle {
+  margin-bottom: 48px;
+}
+.rent .btn-w-arrow {
+  position: relative;
+  width: 231px;
+  height: 51px;
+  background-color: #D11E1F;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rent .btn-w-arrow:hover {
+  background-color: #891313;
+}
+.rent .btn-w-arrow__arrow {
+  position: absolute;
+  right: -16px;
 }
 
 .footer {
