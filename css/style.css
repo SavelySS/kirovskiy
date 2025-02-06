@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Intro Friday";
-  src: url(/assets/fonts/IntroFriday.ttf);
+  src: url("../assets/fonts/IntroFriday.ttf");
 }
 :root {
   --bs-body-font-family: "Montserrat", sans-serif;
@@ -260,7 +260,7 @@ main {
 .first-block-right__img-box {
   width: 100%;
   height: 100%;
-  background-image: url("/assets/img/croisant.svg");
+  background-image: url("../assets/img/croisant.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -295,6 +295,7 @@ main {
 }
 .sale__arrows-left {
   transform: rotate(180deg);
+  margin-right: 16px;
 }
 
 .sale-swiper-card {
@@ -358,7 +359,7 @@ main {
 .sale-swiper-card .like {
   width: 25px;
   height: 25px;
-  background: url("/assets/img/like-r.svg") no-repeat center center/contain;
+  background: url("../assets/img/like-r.svg") no-repeat center center/contain;
 }
 .sale-swiper-card .cart {
   width: 210px;
@@ -380,7 +381,7 @@ main {
   opacity: 0.6;
 }
 .sale-swiper-card:hover .like {
-  background: url("/assets/img/like-w.svg") no-repeat center center/contain;
+  background: url("../assets/img/like-w.svg") no-repeat center center/contain;
 }
 .sale-swiper-card:hover .cart {
   background-color: white;
@@ -389,7 +390,7 @@ main {
 
 .lk {
   margin-bottom: 120px;
-  background: url("/assets/img/lk-bg-img.svg") no-repeat center center/cover;
+  background: url("../assets/img/lk-bg-img.svg") no-repeat center center/cover;
   height: 600px;
   background-color: #D11E1F;
   border-radius: 30px;
@@ -427,7 +428,7 @@ main {
 
 .vac {
   margin-bottom: 120px;
-  background: url("/assets/img/vac-bg-img.svg") no-repeat center center/cover;
+  background: url("../assets/img/vac-bg-img.svg") no-repeat center center/cover;
   height: 600px;
   border-radius: 30px;
 }
@@ -584,6 +585,7 @@ main {
 }
 .brands__arrows-left {
   transform: rotate(180deg);
+  margin-right: 16px;
 }
 
 .swiper-brands__card {
@@ -594,7 +596,7 @@ main {
 .swiper-brands__img {
   width: 90%;
   height: 100%;
-  background: url(/assets/img/brand.svg);
+  background: url("../assets/img/brand.svg");
   filter: grayscale(1);
   background-size: contain;
   background-position: center;
@@ -606,7 +608,7 @@ main {
 
 .rent {
   margin-bottom: 120px;
-  background: url("/assets/img/rent.svg") no-repeat center center/cover;
+  background: url("../assets/img/rent.svg") no-repeat center center/cover;
   height: 600px;
   border-radius: 30px;
 }
@@ -641,6 +643,129 @@ main {
 .rent .btn-w-arrow__arrow {
   position: absolute;
   right: -16px;
+}
+
+.own-prod {
+  margin-bottom: 120px;
+}
+.own-prod__left {
+  height: 600px;
+  background: #F6BB47;
+  border-radius: 30px;
+}
+.own-prod__text-box {
+  margin: 136px 60px 62px 60px;
+  width: auto;
+}
+.own-prod__title {
+  color: white;
+  font-family: "Intro Friday", sans-serif;
+  font-size: 50px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+.own-prod__subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 62px;
+}
+.own-prod .btn-w-arrow {
+  position: relative;
+  width: 161px;
+  height: 51px;
+  background-color: white;
+  border-radius: 10px;
+  color: #F6BB47;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.own-prod .btn-w-arrow__arrow {
+  position: absolute;
+  right: -16px;
+}
+
+.faq {
+  margin-bottom: 48px;
+}
+.faq__btn-group {
+  gap: 16px;
+}
+.faq__btn {
+  width: 203px;
+  height: 51px;
+  background-color: #D11E1F;
+  border-radius: 10px;
+  color: white;
+}
+
+.accordion {
+  margin-bottom: 48px;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button {
+  border: none;
+  box-shadow: none;
+  position: relative;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.custom-arrow {
+  margin-left: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) .custom-arrow {
+  transform: rotate(180deg);
+}
+
+.accordion-button:focus, .accordion-button:active {
+  box-shadow: none;
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+.accordion-con {
+  margin-bottom: 120px;
+}
+
+.map {
+  margin-bottom: 120px;
+}
+.map__box {
+  width: 100%;
+  height: 682px;
+  position: relative;
+}
+.map__box iframe {
+  filter: grayscale(1);
+}
+.map__text-box {
+  position: absolute;
+  width: 549px;
+  height: 211px;
+  bottom: 0;
+  background-color: #D11E1F;
+  color: white;
+  border-radius: 30px;
+}
+.map__title {
+  color: white;
+  font-family: "Intro Friday", sans-serif;
+  font-size: 50px;
+  line-height: 110%;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.map__subtitle {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer {

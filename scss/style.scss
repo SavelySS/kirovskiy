@@ -12,13 +12,14 @@ $white70: rgb(255, 255, 255, 70%);
 $gray: #A7A7A7;
 
 @font-face {
-	font-family: 'Intro Friday'; 
-	src: url(/assets/fonts/IntroFriday.ttf); 
+	font-family: "Intro Friday"; 
+	src: url("../assets/fonts/IntroFriday.ttf"); 
 }
 
 :root {
     --bs-body-font-family: "Montserrat", sans-serif;
     color: $f-color;
+    // ---bs-primary-text-emphasis: inherit;
 }
 
 .h1 {
@@ -226,6 +227,7 @@ main {
     z-index: 50;
     left: calc(5% - 24px);
     top: calc(50% - 24px);
+
 }
 
 .arrow-right-goods {
@@ -250,7 +252,7 @@ main {
         margin-right: 9px;
     }
     &__title {
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: $bold;
         font-size: 16px;
         line-height: 120%;
@@ -312,7 +314,7 @@ main {
     &__img-box {
         width: 100%;
         height: 100%;
-        background-image: url("/assets/img/croisant.svg");
+        background-image: url("../assets/img/croisant.svg");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -334,7 +336,7 @@ main {
         margin-bottom: 3px;
         
         &__text {
-            font-family: 'Intro Friday', sans-serif;
+            font-family: "Intro Friday", sans-serif;
             font-size: 50px;
             line-height: 110%;
             color: $f-color;
@@ -356,6 +358,7 @@ main {
 
     &__arrows-left {
         transform: rotate(180deg);
+        margin-right: 16px;
     }
 }
 
@@ -432,7 +435,7 @@ main {
     .like {
         width: 25px;
         height: 25px;
-        background: url('/assets/img/like-r.svg') no-repeat center center / contain;
+        background: url("../assets/img/like-r.svg") no-repeat center center / contain;
     }
 
     .cart {
@@ -459,7 +462,7 @@ main {
         }
 
         .like {
-            background: url('/assets/img/like-w.svg') no-repeat center center / contain;
+            background: url("../assets/img/like-w.svg") no-repeat center center / contain;
         }
 
         .cart {
@@ -473,7 +476,7 @@ main {
 
 .lk {
     margin-bottom: 120px;
-    background: url('/assets/img/lk-bg-img.svg') no-repeat center center / cover;
+    background: url("../assets/img/lk-bg-img.svg") no-repeat center center / cover;
     height: 600px;
     background-color: $main-red;
     border-radius: 30px;
@@ -485,7 +488,7 @@ main {
 
     &__title {
         color: white;  
-        font-family: 'Intro Friday', sans-serif;
+        font-family: "Intro Friday", sans-serif;
         font-size: 50px;
         line-height: 110%;
         margin-bottom: 20px;  
@@ -522,7 +525,7 @@ main {
 
 .vac {
     margin-bottom: 120px;
-    background: url('/assets/img/vac-bg-img.svg') no-repeat center center / cover;
+    background: url("../assets/img/vac-bg-img.svg") no-repeat center center / cover;
     height: 600px;
     border-radius: 30px;
 
@@ -533,7 +536,7 @@ main {
     } 
 
     &__title {
-        font-family: 'Intro Friday', sans-serif;
+        font-family: "Intro Friday", sans-serif;
         font-size: 50px;
         line-height: 110%;
         margin-bottom: 20px;  
@@ -575,7 +578,7 @@ main {
     }
 
     &__title {
-        font-family: 'Intro Friday', sans-serif;
+        font-family: "Intro Friday", sans-serif;
         font-size: 50px;
         line-height: 110%;
         color: $f-color;
@@ -706,7 +709,7 @@ main {
         margin-bottom: 3px;
         
         &__text {
-            font-family: 'Intro Friday', sans-serif;
+            font-family: "Intro Friday", sans-serif;
             font-size: 50px;
             line-height: 110%;
             color: $f-color;
@@ -716,6 +719,7 @@ main {
 
     &__arrows-left {
         transform: rotate(180deg);
+        margin-right: 16px;
     }
 }
 
@@ -732,7 +736,7 @@ main {
         
         width: 90%;
         height: 100%;
-        background: url(/assets/img/brand.svg);
+        background: url("../assets/img/brand.svg");
         filter: grayscale(1);
         background-size: contain;
         background-position: center;
@@ -748,7 +752,7 @@ main {
 
 .rent {
     margin-bottom: 120px;
-    background: url('/assets/img/rent.svg') no-repeat center center / cover;
+    background: url("../assets/img/rent.svg") no-repeat center center / cover;
     height: 600px;
     border-radius: 30px;
 
@@ -759,7 +763,7 @@ main {
     } 
 
     &__title {
-        font-family: 'Intro Friday', sans-serif;
+        font-family: "Intro Friday", sans-serif;
         font-size: 50px;
         line-height: 110%;
         margin-bottom: 20px;  
@@ -790,6 +794,157 @@ main {
         }
     }
 }
+
+// ----------- own-production ------------
+
+.own-prod {
+    margin-bottom: 120px;
+
+    &__left {
+        height: 600px;
+        background: $yellow;
+        border-radius: 30px;
+    }
+
+    &__text-box {
+        margin: 136px 60px 62px 60px;
+        width: auto;
+    } 
+
+    &__title {
+        color: white;  
+        font-family: "Intro Friday", sans-serif;
+        font-size: 50px;
+        line-height: 110%;
+        margin-bottom: 20px;  
+    }
+
+    &__subtitle {
+        color: $white70;
+        margin-bottom: 62px;
+    }
+
+    .btn-w-arrow {
+        position: relative;
+        width: 161px;
+        height: 51px;
+        background-color: white;
+        border-radius: 10px;
+        color: $yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        // &:hover {
+        //     background-color: $hover-red;
+        // }
+    
+        &__arrow {
+            position: absolute;
+            right: -16px;
+        }
+    }
+}
+
+// ---------------  faq  ----------------
+
+
+.faq {
+    margin-bottom: 48px;
+
+    &__btn-group {
+        gap: 16px;
+    }
+
+    &__btn {
+        width: 203px;
+        height: 51px;
+        background-color: $main-red;
+        border-radius: 10px;
+        color: white;
+    }
+
+}
+
+.accordion {
+    margin-bottom: 48px;
+}
+
+.accordion-item {
+    border: none;
+}
+  
+.accordion-button {
+    border: none;
+    box-shadow: none;
+    position: relative;
+}
+  
+.accordion-button::after {
+    display: none;
+}
+  
+.custom-arrow {
+    margin-left: auto;
+    transition: transform 0.2s ease-in-out;
+}
+  
+.accordion-button:not(.collapsed) .custom-arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-button:focus, .accordion-button:active {
+  box-shadow: none;
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+.accordion-con {
+    margin-bottom: 120px;
+}
+
+// --------------   map   ----------------
+
+.map {
+    margin-bottom: 120px;
+
+    &__box {
+        width: 100%;
+        height: 682px;
+        position: relative;
+
+        iframe {
+            filter: grayscale(1);
+        }
+    }
+
+    &__text-box {
+        position: absolute;
+        width: 549px;
+        height: 211px;
+        bottom: 0;
+        background-color: $main-red;
+        color: white;
+        border-radius: 30px;
+    }
+
+    &__title {
+        color: white;  
+        font-family: "Intro Friday", sans-serif;
+        font-size: 50px;
+        line-height: 110%;
+        margin-bottom: 20px;  
+        margin-top: 40px;
+    }
+
+    &__subtitle {
+        color: $white70;
+    }
+
+}
+
+
 
 // --------------- footer ----------------
 
